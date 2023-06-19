@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 
-#define cantidad_alumnos 2
+#define cantidad_alumnos 5
 #define max 20
 
 struct alumno_structure
