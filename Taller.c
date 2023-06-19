@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
 #define cantidad_alumnos 2
 #define max 20
@@ -41,20 +43,24 @@ int main ()
         scanf("%f", &alumno[i].promedio);
     }
 
+    system("cls");
+
     for (int i = 0; i < cantidad_alumnos; i++)
     {
         printf("ALUMNO N# %d\n", i+1);
 
-        puts(alumno[i].nombre);
-        puts(alumno[i].direccion);
-        puts(alumno[i].carrera);
+        printf("NOMBRE: %s\n",alumno[i].nombre);
+        printf("DIRECCION: %s\n",alumno[i].direccion);
+        printf("CARRERA: %s\n",alumno[i].carrera);
         
         printf("Edad: %d\n", alumno[i].edad);
         printf("Promedio: %.2f\n", alumno[i].promedio);
-        
+
+        puts(" ");
     }
 
 
 
     return 0;
 }   
+
